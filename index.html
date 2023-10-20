@@ -23,15 +23,40 @@
 
   body {
     background-color: hsl(212, 45%, 89%);
+    
   }
 
   .container{
-    border: 1px solid black;
-    width: 20%;
-    height: 50%;
-    position:relative;
+    width: 280px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
   }
+
+     .header{
+      font-size: 20px;
+      font-weight: 700;
+      color: hsl(218, 44%, 22%);
+    }
+
+    .paragraph{
+      font-size: 15px;
+      font-weight: 400;
+      color: hsl(220, 15%, 55%);
+    }
+ 
+    .text{
+      text-align: center;
+      padding: 0 10px 0 10px;
+      font-family: 'Kumbh Sans', sans-serif;
+      font-family: 'Outfit', sans-serif;
+    }
+
 
   </style>
 
@@ -40,13 +65,16 @@
 <body>
 
   <div class="container">
-    <img src="images\image-qr-code.png" alt="qr-code" class="qr-code" style="width: 100%;">
-    <h2>Improve your front-end skills by building projects</h2>
-    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    <img src="images\image-qr-code.png" alt="qr-code" class="qr-code" style="width: 100%; border-radius: 20px;">
+    <div class="text">
+      <p class="header">Improve your front-end skills by building projects</p>
+      <p class="paragraph">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+    
   </div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br> 
     Coded by <a href="#">Karla De La Cruz</a>.
   </div>
 
